@@ -1,10 +1,7 @@
 import java.util.Scanner;
 
 public class App {
-
-    // Class untuk menghitung optik (jarak bayangan)
     static class OpticsCalculator {
-        // Menghitung jarak bayangan s' dari fokus dan jarak benda
         public static double hitungJarakBayangan(double fokus, double jarakBenda) {
             if (fokus == 0 || jarakBenda == 0) {
                 throw new IllegalArgumentException("Fokus dan jarak benda tidak boleh 0.");
@@ -18,8 +15,6 @@ public class App {
             return 1.0 / inversSPrim;
         }
     }
-
-    // Class bantu validasi input
     static class InputHelper {
         public static double getDoubleInput(Scanner scanner) {
             while (true) {
@@ -31,8 +26,6 @@ public class App {
             }
         }
     }
-
-    // Main program
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("=== KALKULATOR OPTIK – Lensa Tipis ===");
